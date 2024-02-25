@@ -42,4 +42,4 @@ get_diet_recommendation = {
     'Impetigo': ['Turmeric', 'Honey', 'Neem Leaves', 'Coconut Oil', 'Aloe Vera Gel']
 }
 
-print(get_diet_recommendation["AIDS"])
+
