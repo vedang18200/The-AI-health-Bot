@@ -83,8 +83,6 @@ def register():
         uname = request.form['uname']
         mail = request.form['mail']
         passw = request.form['passw']
-        # gender = request.form['gender']
-
         register = user(username=uname, email=mail, password=passw)
         db.session.add(register)
         db.session.commit()
@@ -218,7 +216,12 @@ def predict_disease_from_symptom(symptom_list,gender):
     df_test.loc[len(df.index)] = np.array(list(symptoms.values()))
     print(df_test.head())
     # Load pre-trained model
-    clf = load(str("model/try2.joblib"))
+    if gender == 'female':
+        print("female used")
+        clf = load(str("model/try2.joblib"))
+    else:
+        print("male used")
+        clf = load(str("model/new.jonlib"))
     result = clf.predict(df_test)
     print("-----=-=-=======================================")
     print(result)    
@@ -232,22 +235,6 @@ def predict_disease_from_symptom(symptom_list,gender):
     else:
         return "The most likely diseases are<br><b>"+ ', '.join(list(result))+"</b>", "", ""
 
-    # # Output results
-    # if len(diseases) == 0:
-    #     return "<b>No matching diseases found</b>",""
-    # elif len(diseases) == 1:
-    #     print("The most likely disease is:", list(result))
-    #     disease_details = getDiseaseInfo(list(result)[0])
-    #     return f"<b>{list(result)[0]}</b><br>{disease_details}",list(result)[0]
-    # else:
-    #     return "The most likely diseases are<br><b>"+ ', '.join(list(result))+"</b>",""
-
-        
-
-    
-
-    
-  
 
     disease_details = getDiseaseInfo(result[0])
     
@@ -328,18 +315,22 @@ def chat_msg():
 
         currentState = userSession.get(sessionId)
 
-        if currentState ==-1:
-            response.append("Hi "+user_message+", To predict your disease based on symptopms, we need some information about you. Please provide accordingly.")
-            response.append("what is your gender ?")
-            user_message = all_result['gender']
-            userSession[sessionId] = userSession.get(sessionId) +1
-            all_result['name'] = user_message 
-                       
+        if currentState == -1:
+            all_result['name'] = user_message   
+            response.append("Hi there! To predict your disease based on symptoms, we need some information about you.")
+            response.append("What is your gender? (Please enter 'male' or 'female')")
+            userSession[sessionId] = 0
+            return jsonify({'status': 'OK', 'answer': response})
 
-        if currentState==0:
-            username = all_result['name']
-            response.append(username+", what is you age?")
-            userSession[sessionId] = userSession.get(sessionId) +1
+        if currentState == 0:
+            if user_message in ['male', 'female']:
+                all_result['gender'] = user_message
+                response.append("Thank you for providing your gender.")
+                response.append("Now, what is your age?")
+                userSession[sessionId] = 1
+            else:
+                response.append("Invalid input. Please enter 'male' or 'female' as your gender.")
+            return jsonify({'status': 'OK', 'answer': response})
 
         if currentState==1:
             pattern = r'\d+'

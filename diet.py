@@ -1,5 +1,5 @@
 get_diet_recommendation = {
-    'Fungal infection': ['Garlic', 'Yogurt', 'Turmeric', 'Neem', 'Coconut Oil'],
+     'Fungal infection': ['Garlic', 'Yogurt', 'Turmeric', 'Neem', 'Coconut Oil'],
     'Allergy': ['Turmeric', 'Honey', 'Green Tea', 'Ginger', 'Omega-3 Rich Foods'],
     'GERD': ['Oatmeal', 'Ginger Tea', 'Leafy Greens', 'Banana', 'Almond Milk'],
     'Chronic cholestasis': ['Beetroot', 'Carrots', 'Papaya', 'Spinach', 'Turmeric'],
@@ -27,7 +27,7 @@ get_diet_recommendation = {
     'Tuberculosis': ['Turmeric', 'Garlic', 'Leafy Greens', 'Ginger Tea', 'Cayenne Pepper'],
     'Common Cold': ['Ginger Tea', 'Chicken Soup', 'Honey', 'Citrus Fruits', 'Garlic'],
     'Pneumonia': ['Garlic', 'Ginger Tea', 'Honey', 'Turmeric', 'Oregano Tea'],
-    'Dimorphic hemorrhoids (piles)': ['Fiber-Rich Foods', 'Fluids', 'Green Leafy Vegetables', 'Whole Grains', 'Prunes'],
+    'Dimorphic hemmorhoids(piles)': ['Fiber-Rich Foods', 'Fluids', 'Green Leafy Vegetables', 'Whole Grains', 'Prunes'],
     'Heart attack': ['Oats', 'Olive Oil', 'Garlic', 'Leafy Greens', 'Berries'],
     'Varicose veins': ['Flaxseeds', 'Ginger', 'Cayenne Pepper', 'Leafy Greens', 'Berries'],
     'Hypothyroidism': ['Seaweed', 'Brazil Nuts', 'Turmeric', 'Ginger', 'Coconut Oil'],
@@ -39,7 +39,10 @@ get_diet_recommendation = {
     'Acne': ['Green Tea', 'Turmeric', 'Fruits', 'Vegetables', 'Nuts'],
     'Urinary tract infection': ['Cranberry Juice', 'Watermelon', 'Yogurt', 'Celery', 'Cucumber'],
     'Psoriasis': ['Turmeric', 'Olive Oil', 'Leafy Greens', 'Fish', 'Nuts'],
-    'Impetigo': ['Turmeric', 'Honey', 'Neem Leaves', 'Coconut Oil', 'Aloe Vera Gel']
+    'Impetigo': ['Turmeric', 'Honey', 'Neem Leaves', 'Coconut Oil', 'Aloe Vera Gel'],
+    'Anemia': ['Spinach', 'Beetroot', 'Pomegranate', 'Apple', 'Dates'],
+    'Ovarian cancer': ['Green Leafy Vegetables', 'Cruciferous Vegetables', 'Berries', 'Whole Grains', 'Flaxseeds']
+
 }
 
 
