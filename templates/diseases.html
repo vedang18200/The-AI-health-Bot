@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,14 +6,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            /* background-color: #f2f2f2; */
+            background: linear-gradient(to right, #f9f4ef, #ffcd91df) ;
         }
         
         .disease {
             display: inline-block;
             padding: 5px;
-            background-color: #fff;
-            border: 1px solid #ccc;
+            background-color: #eab676ab;
+            border: 1px solid #e96900; 
+            /* eab676 */
             border-radius: 5px;
             margin: 5px;
             cursor: pointer;
@@ -21,7 +24,10 @@
         
         .disease:hover {
             background-color: #f2f2f2;
-        }
+            color: red;
+            border: 1.5px solid red; 
+            transition: border 0.3s ease-in-out;
+        }
 
         /* Adjusted style for the search box */
         #searchInput {
@@ -185,7 +191,70 @@
         <div class="disease" onclick="addToSymptoms('red_sore_around_nose')">Red Sore Around Nose</div>
         <div class="disease" onclick="addToSymptoms('Bloating')">Bloating</div>
         <div class="disease" onclick="addToSymptoms('difficulty_eating')">Difficulty Eating</div>
-        <div class="disease" onclick="addToSymptoms('urgent_urination')">Urgent Urination</div>
+        <div class="disease" onclick="addToSymptoms('frequent_urination')">Urgent Urination</div>
+        
+        <div class="disease" onclick="addToSymptoms('difficulty_swallowing')">Difficulty Swallowing</div>
+        <div class="disease" onclick="addToSymptoms('difficulty_breathing')">Difficulty breathing</div>
+        <div class="disease" onclick="addToSymptoms('swelling')">Swelling</div>
+        <div class="disease" onclick="addToSymptoms('night_sweats')">Night Sweats</div>
+        <div class="disease" onclick="addToSymptoms('sweollen_lymph_nodes')">Sweollen Lymph Nodes</div>
+        <div class="disease" onclick="addToSymptoms('coughing')">Coughing</div>
+        <div class="disease" onclick="addToSymptoms('wheezing')">Wheezing</div>
+        <div class="disease" onclick="addToSymptoms('shortness_of_breath')">Shortness Of Breath</div>
+        <div class="disease" onclick="addToSymptoms('chest_tightness')">Chest Tightness</div>
+        <div class="disease" onclick="addToSymptoms('recatal_bleeding')">Recatal Bleeding</div>
+        <div class="disease" onclick="addToSymptoms('hair_loss')">Hair loss</div>
+        <div class="disease" onclick="addToSymptoms('limited_range_of_motion')">Limited Range Of Motion </div>
+
+        <div class="disease" onclick="addToSymptoms('pelvic_pain')">Pelvic pain</div>
+        <div class="disease" onclick="addToSymptoms('heavy_menstrual_bleeding')">Heavy menstrual bleeding</div>
+        <div class="disease" onclick="addToSymptoms('painful_periods')">Painful periods</div>
+        <div class="disease" onclick="addToSymptoms('pain_during_intercourse')">Pain during intercourse</div>
+        <div class="disease" onclick="addToSymptoms('infertility')">Infertility</div>
+        <div class="disease" onclick="addToSymptoms('irregular_periods')">Irregular periods</div>
+        <div class="disease" onclick="addToSymptoms('excess_facial_and_body_hair')">Excess facial and body hair</div>
+        <div class="disease" onclick="addToSymptoms('bloating')">Bloating</div>
+        <div class="disease" onclick="addToSymptoms('pain_while_urination')">Pain while urination</div>
+        <div class="disease" onclick="addToSymptoms('breast_lump_or_thickening')">Breast lump or thickening</div>
+        <div class="disease" onclick="addToSymptoms('changes_in_breast_size_or_shape')">Changes in breast size or shape</div>
+        <div class="disease" onclick="addToSymptoms('nipple_change')">Nipple change</div>
+        <div class="disease" onclick="addToSymptoms('nipple_discharge')">Nipple discharge</div>
+        <div class="disease" onclick="addToSymptoms('unusual_vaginal_discharge')">Unusual vaginal discharge</div>
+        <div class="disease" onclick="addToSymptoms('difficulty_eating')">Difficulty eating</div>
+        <div class="disease" onclick="addToSymptoms('hot_flashes')">Hot flashes</div>
+        <div class="disease" onclick="addToSymptoms('vaginal_dryness')">Vaginal dryness</div>
+        <div class="disease" onclick="addToSymptoms('reduced_libido')">Reduced libido</div>
+        <div class="disease" onclick="addToSymptoms('sleep_disturbances')">Sleep disturbances</div>
+
+            
+        <div class="disease" onclick="addToSymptoms('difficulty_urinating')">Difficulty Urinating</div>
+        <div class="disease" onclick="addToSymptoms('blood_in_urine_or_semen')">Blood in Urine or Semen</div>
+        <div class="disease" onclick="addToSymptoms('erectile_dysfunction')">Erectile Dysfunction</div>
+        <div class="disease" onclick="addToSymptoms('swelling_in_testicle')">Swelling in Testicle</div>
+        <div class="disease" onclick="addToSymptoms('pain_in_testicle')">Pain in Testicle</div>
+        <div class="disease" onclick="addToSymptoms('enlargement_of_breasts')">Enlargement of Breasts</div>
+        <div class="disease" onclick="addToSymptoms('fluid_in_scrotum')">Fluid in Scrotum</div>
+        <div class="disease" onclick="addToSymptoms('incomplete_emptying_of_bladder')">Incomplete Emptying of Bladder</div>
+        <div class="disease" onclick="addToSymptoms('nocturia')">Nocturia</div>
+        <div class="disease" onclick="addToSymptoms('difficulty_erection')">Difficulty Erection</div>
+        <div class="disease" onclick="addToSymptoms('reduced_sexual_desire')">Reduced Sexual Desire</div>
+        <div class="disease" onclick="addToSymptoms('premature_ejaculation')">Premature Ejaculation</div>
+        <div class="disease" onclick="addToSymptoms('sensitivity_to_cold')">Sensitivity to Cold</div>
+        <div class="disease" onclick="addToSymptoms('dry_skin')">Dry Skin</div>
+        <div class="disease" onclick="addToSymptoms('swelling_of_scrotum')">Swelling of Scrotum</div>
+        <div class="disease" onclick="addToSymptoms('cracking_sound_from_penis')">Cracking Sound from Penis</div>
+        <div class="disease" onclick="addToSymptoms('loss_of_erection')">Loss of Erection</div>
+        <div class="disease" onclick="addToSymptoms('pain_in_penis')">Pain in Penis</div>
+        <div class="disease" onclick="addToSymptoms('swelling_of_penis')">Swelling of Penis</div>
+        <div class="disease" onclick="addToSymptoms('undescended_testicle')">Undescended Testicle</div>
+        <div class="disease" onclick="addToSymptoms('empty_scrotum')">Empty Scrotum</div>
+        <div class="disease" onclick="addToSymptoms('hernia')">Hernia</div>
+
+
+
+
+
+        
     </div>
 
     

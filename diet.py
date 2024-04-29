@@ -1,5 +1,5 @@
 get_diet_recommendation = {
-     'Fungal infection': ['Garlic', 'Yogurt', 'Turmeric', 'Neem', 'Coconut Oil'],
+    'Fungal infection': ['Garlic', 'Yogurt', 'Turmeric', 'Neem', 'Coconut Oil'],
     'Allergy': ['Turmeric', 'Honey', 'Green Tea', 'Ginger', 'Omega-3 Rich Foods'],
     'GERD': ['Oatmeal', 'Ginger Tea', 'Leafy Greens', 'Banana', 'Almond Milk'],
     'Chronic cholestasis': ['Beetroot', 'Carrots', 'Papaya', 'Spinach', 'Turmeric'],
@@ -41,8 +41,29 @@ get_diet_recommendation = {
     'Psoriasis': ['Turmeric', 'Olive Oil', 'Leafy Greens', 'Fish', 'Nuts'],
     'Impetigo': ['Turmeric', 'Honey', 'Neem Leaves', 'Coconut Oil', 'Aloe Vera Gel'],
     'Anemia': ['Spinach', 'Beetroot', 'Pomegranate', 'Apple', 'Dates'],
-    'Ovarian cancer': ['Green Leafy Vegetables', 'Cruciferous Vegetables', 'Berries', 'Whole Grains', 'Flaxseeds']
-
+    'Ovarian cancer': ['Green Leafy Vegetables', 'Cruciferous Vegetables', 'Berries', 'Whole Grains', 'Flaxseeds'],
+    'Endometriosis': ['Turmeric', 'Fenugreek', 'Ginger', 'Green leafy vegetables', 'Fruits'],
+    'Polycystic Ovary Syndrome (PCOS)': ['Cinnamon', 'Turmeric', 'Fenugreek', 'Spearmint tea', 'Whole grains'],
+    'Ovarian Cysts': ['Turmeric', 'Flaxseeds', 'Green leafy vegetables', 'Fruits', 'Whole grains'],
+    'Uterine Fibroids': ['Turmeric', 'Ginger', 'Flaxseeds', 'Green leafy vegetables', 'Whole grains'],
+    'Pelvic Inflammatory Disease (PID)': ['Turmeric', 'Ginger', 'Garlic', 'Green leafy vegetables', 'Whole grains'],
+    'Breast Cancer': ['Turmeric', 'Garlic', 'Green tea', 'Cruciferous vegetables', 'Fruits'],
+    'Ovarian Cancer': ['Turmeric', 'Ginger', 'Garlic', 'Green leafy vegetables', 'Whole grains'],
+    'Menopause': ['Soy products', 'Flaxseeds', 'Green leafy vegetables', 'Nuts', 'Whole grains'],
+    'Vaginal Yeast Infection': ['Curd (Yogurt)', 'Garlic', 'Fenugreek', 'Turmeric', 'Green leafy vegetables'],
+    "Prostate Cancer": ["Cruciferous vegetables (broccoli, cauliflower)", "Tomatoes", "Berries", "Nuts and seeds", "Healthy oils (olive oil)", "Green tea"],
+    "Testicular Cancer": ["Fruits and vegetables", "Whole grains (brown rice, oats)", "Lean proteins (poultry, fish, legumes)", "Healthy fats (olive oil, nuts)", "Limit processed foods and sugary snacks"],
+    "Benign Prostatic Hyperplasia (BPH)": ["Zinc-rich foods (pumpkin seeds, legumes)", "Antioxidant-rich foods (berries, spinach)", "Healthy fats (avocado, olive oil)", "Lean proteins (chicken, turkey)", "Limit caffeine and alcohol"],
+    "Erectile Dysfunction": ["Nitrates-rich foods (leafy greens, beets)", "Omega-3 fatty acids (fish, flaxseeds)", "Whole grains (quinoa, whole wheat)", "Lean proteins (poultry, legumes)", "Limit processed foods and high-fat meals"],
+    "Hypothyroidism": ["Iodine-rich foods (iodized salt, seafood)", "Selenium sources (Brazil nuts, whole grains)", "Lean proteins (chicken, fish, tofu)", "Fiber-rich foods (fruits, vegetables, whole grains)", "Limit goitrogenic foods (cabbage, broccoli)"],
+    "Testicular Torsion": ["Balanced diet with fruits, vegetables, whole grains, lean proteins", "Vitamin C and E-rich foods (citrus fruits, nuts)", "Healthy fats (avocado, olive oil)", "Limit processed foods and sugary snacks"],
+    "Penile Fracture": ["Vitamin C and collagen-rich foods (citrus fruits, bell peppers)", "Lean proteins (poultry, fish)", "Anti-inflammatory foods (turmeric, ginger)", "Whole grains and fiber-rich foods", "Limit processed foods and high-fat meals"],
+    "Cryptorchidism": ["Balanced diet with fruits, vegetables, whole grains, lean proteins", "Sources of zinc, selenium, vitamin E", "Healthy fats (avocado, nuts)", "Limit processed foods and high-fat meals"]
+    
+    
 }
+
+
+
 
 

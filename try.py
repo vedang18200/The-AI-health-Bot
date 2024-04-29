@@ -175,14 +175,14 @@ def predict_disease_from_symptom(symptom_list,gender):
         if similarity_scores[i] == max_score:
             diseases.add(df.iloc[i]['Disease'])
     if gender == 'female':
-         symptoms = {'itching': 0, 'skin_rash': 0, 'nodal_skin_eruptions': 0, 'continuous_sneezing': 0,
+         symptoms =  {'itching': 0, 'skin_rash': 0, 'nodal_skin_eruptions': 0, 'continuous_sneezing': 0,
                 'shivering': 0, 'chills': 0, 'joint_pain': 0, 'stomach_pain': 0, 'acidity': 0, 'ulcers_on_tongue': 0,
                 'muscle_wasting': 0, 'vomiting': 0, 'burning_micturition': 0, 'spotting_ urination': 0, 'fatigue': 0,
                 'weight_gain': 0, 'anxiety': 0, 'cold_hands_and_feets': 0, 'mood_swings': 0, 'weight_loss': 0,
-                'restlessness': 0, 'lethargy': 0, 'patches_in_throat': 0, 'irregular_sugar_level': 0, 'cough': 0,
+                'restlessness': 0, 'lethargy': 0, 'patches_in_throat': 0, 'irregular_sugar_level': 0, 
                 'high_fever': 0, 'sunken_eyes': 0, 'breathlessness': 0, 'sweating': 0, 'dehydration': 0,
                 'indigestion': 0, 'headache': 0, 'yellowish_skin': 0, 'dark_urine': 0, 'nausea': 0, 'loss_of_appetite': 0,
-                'pain_behind_the_eyes': 0, 'back_pain': 0, 'constipation': 0, 'abdominal_pain': 0, 'diarrhoea': 0, 'mild_fever': 0,
+                'pain_behind_the_eyes': 0, 'back_pain': 0, 'constipation': 0, 'diarrhoea': 0, 'mild_fever': 0,
                 'yellow_urine': 0, 'yellowing_of_eyes': 0, 'acute_liver_failure': 0, 'fluid_overload': 0, 'swelling_of_stomach': 0,
                 'swelled_lymph_nodes': 0, 'malaise': 0, 'blurred_and_distorted_vision': 0, 'phlegm': 0, 'throat_irritation': 0,
                 'redness_of_eyes': 0, 'sinus_pressure': 0, 'runny_nose': 0, 'congestion': 0, 'chest_pain': 0, 'weakness_in_limbs': 0,
@@ -200,16 +200,22 @@ def predict_disease_from_symptom(symptom_list,gender):
                 'stomach_bleeding': 0, 'distention_of_abdomen': 0, 'history_of_alcohol_consumption': 0, 'fluid_overload.1': 0,
                 'blood_in_sputum': 0, 'prominent_veins_on_calf': 0, 'palpitations': 0, 'painful_walking': 0, 'pus_filled_pimples': 0,
                 'blackheads': 0, 'scurring': 0, 'skin_peeling': 0, 'silver_like_dusting': 0, 'small_dents_in_nails': 0, 'inflammatory_nails': 0,
-                'blister': 0, 'red_sore_around_nose': 0, 'yellow_crust_ooze': 0,'Bloating':0,'difficulty_eating':0,'urgent_urination':0}
+                'blister': 0, 'red_sore_around_nose': 0, 'yellow_crust_ooze': 0,'difficulty_swallowing':0, 'abdominal_pain': 0,'difficulty_breathing':0,
+                'swelling':0,'night_sweats':0,'swollen_lymph_nodes':0,'frequent_urination':0,'coughing':0,'wheezing':0,'shortness_of_breath':0,
+                'cheat_tightness':0,'rectal_bleeding':0,'hair_loss':0,'limited_range_of_motion':0,'pelvic_pain':0,'heavy_menstrual_bleeding':0,
+                'painful_periods':0,'pain_during_intercourse':0,'infertility':0,'irregular_periods':0,'excess_facial_and_body_hair':0,
+                'bloating':0,'pain_while_urination':0,'breast_lump_or_thickening':0,'changes_in_breast_size_or_shape':0,'nipple_change ':0,
+                'nipple_discharge':0,'unusual_vaginal_discharge':0,'difficulty_eating ':0,'hot_flashes':0,'vaginal_dryness':0,'reduced_libido':0,
+                'sleep_disturbances':0}
     else:
         symptoms = {'itching': 0, 'skin_rash': 0, 'nodal_skin_eruptions': 0, 'continuous_sneezing': 0,
                 'shivering': 0, 'chills': 0, 'joint_pain': 0, 'stomach_pain': 0, 'acidity': 0, 'ulcers_on_tongue': 0,
                 'muscle_wasting': 0, 'vomiting': 0, 'burning_micturition': 0, 'spotting_ urination': 0, 'fatigue': 0,
                 'weight_gain': 0, 'anxiety': 0, 'cold_hands_and_feets': 0, 'mood_swings': 0, 'weight_loss': 0,
-                'restlessness': 0, 'lethargy': 0, 'patches_in_throat': 0, 'irregular_sugar_level': 0, 'cough': 0,
+                'restlessness': 0, 'lethargy': 0, 'patches_in_throat': 0, 'irregular_sugar_level': 0, 
                 'high_fever': 0, 'sunken_eyes': 0, 'breathlessness': 0, 'sweating': 0, 'dehydration': 0,
                 'indigestion': 0, 'headache': 0, 'yellowish_skin': 0, 'dark_urine': 0, 'nausea': 0, 'loss_of_appetite': 0,
-                'pain_behind_the_eyes': 0, 'back_pain': 0, 'constipation': 0, 'abdominal_pain': 0, 'diarrhoea': 0, 'mild_fever': 0,
+                'pain_behind_the_eyes': 0, 'back_pain': 0, 'constipation': 0, 'diarrhoea': 0, 'mild_fever': 0,
                 'yellow_urine': 0, 'yellowing_of_eyes': 0, 'acute_liver_failure': 0, 'fluid_overload': 0, 'swelling_of_stomach': 0,
                 'swelled_lymph_nodes': 0, 'malaise': 0, 'blurred_and_distorted_vision': 0, 'phlegm': 0, 'throat_irritation': 0,
                 'redness_of_eyes': 0, 'sinus_pressure': 0, 'runny_nose': 0, 'congestion': 0, 'chest_pain': 0, 'weakness_in_limbs': 0,
@@ -227,7 +233,12 @@ def predict_disease_from_symptom(symptom_list,gender):
                 'stomach_bleeding': 0, 'distention_of_abdomen': 0, 'history_of_alcohol_consumption': 0, 'fluid_overload.1': 0,
                 'blood_in_sputum': 0, 'prominent_veins_on_calf': 0, 'palpitations': 0, 'painful_walking': 0, 'pus_filled_pimples': 0,
                 'blackheads': 0, 'scurring': 0, 'skin_peeling': 0, 'silver_like_dusting': 0, 'small_dents_in_nails': 0, 'inflammatory_nails': 0,
-                'blister': 0, 'red_sore_around_nose': 0, 'yellow_crust_ooze': 0}
+                'blister': 0, 'red_sore_around_nose': 0, 'yellow_crust_ooze': 0,'difficulty_swallowing':0,'abdominal_pain': 0,'difficulty_breathing':0,
+                'swelling':0,'night_sweats':0,'swollen_lymph_nodes':0,'frequent_urination':0,'coughing':0,'wheezing':0,'shortness_of_breath':0,
+                'cheat_tightness':0,'rectal_bleeding':0,'hair_loss':0,'limited_range_of_motion':0,'difficulty_urinating':0,'blood _in_urine_or_semen':0,
+                'erectile_dysfunction':0,'swelling_in_testicle':0,'pain_in_testicle':0,'enlargement_of_breasts':0,' fluid_in_scrotum':0,'incomplete_emptying_of_bladder':0,
+                'nocturia':0,'difficulty_erection':0,'reduced_sexual_desire':0,'premature_ejaculation':0,'sensitivity_to_cold':0,'dry_skin':0,'swelling_of_scrotum':0,
+                'cracking_sound_from_penis':0,'loss_of_erection':0,'pain_in_penis':0,'swelling_of_penis':0,'undescended_testicle':0,'empty_scrotum':0,'hernia':0}
     
     
     
@@ -244,10 +255,10 @@ def predict_disease_from_symptom(symptom_list,gender):
     # Load pre-trained model
     if gender == 'female':
         print("female used")
-        clf = load(str("model/try2.joblib"))
+        clf = load(str("model/female1.joblib"))
     else:
         print("male used")
-        clf = load(str("model/new.joblib"))
+        clf = load(str("model/male.joblib"))
     result = clf.predict(df_test)
     print("-----=-=-=======================================")
     print(result)    
@@ -531,4 +542,3 @@ if __name__ == "__main__":
         db.create_all()
 
     app.run(debug=False, port=3000)
-

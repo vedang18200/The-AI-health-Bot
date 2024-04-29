@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.disease {
+    display: inline-block;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.disease:hover {
+    background-color: #f2f2f2;
+}
+
+/* Adjusted style for the search box */
+#searchInput {
+    padding: 5px; /* Reduced padding */
+    margin-bottom: 10px; /* Adjusted margin */
+    width: 50%; /* Smaller width */
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Added style for the message */
+.message {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
