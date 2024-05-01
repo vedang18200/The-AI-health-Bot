@@ -58,10 +58,9 @@ get_diet_recommendation = {
     "Hypothyroidism": ["Iodine-rich foods (iodized salt, seafood)", "Selenium sources (Brazil nuts, whole grains)", "Lean proteins (chicken, fish, tofu)", "Fiber-rich foods (fruits, vegetables, whole grains)", "Limit goitrogenic foods (cabbage, broccoli)"],
     "Testicular Torsion": ["Balanced diet with fruits, vegetables, whole grains, lean proteins", "Vitamin C and E-rich foods (citrus fruits, nuts)", "Healthy fats (avocado, olive oil)", "Limit processed foods and sugary snacks"],
     "Penile Fracture": ["Vitamin C and collagen-rich foods (citrus fruits, bell peppers)", "Lean proteins (poultry, fish)", "Anti-inflammatory foods (turmeric, ginger)", "Whole grains and fiber-rich foods", "Limit processed foods and high-fat meals"],
-    "Cryptorchidism": ["Balanced diet with fruits, vegetables, whole grains, lean proteins", "Sources of zinc, selenium, vitamin E", "Healthy fats (avocado, nuts)", "Limit processed foods and high-fat meals"]
-    
-    
+    "Cryptorchidism": ["Balanced diet with fruits, vegetables, whole grains, lean proteins", "Sources of zinc, selenium, vitamin E", "Healthy fats (avocado, nuts)", "Limit processed foods and high-fat meals"]  
 }
+
 
 
 
